@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>指尖上的艺术官网</title>
+<meta name="description" content="指尖上的艺术官网">
+<meta name="keywords" content="指尖上的艺术官网">
+  <link rel="shortcut icon" href="images/校徽.jpg">
+  <link rel="icon" href="images/校徽.jpg" > 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+		var PicTotal=4;
+		var CurrentIndex;
+		var ToDisplayPicNumber=0;
+		function DisplayPic(){
+			CurrentIndex=$(this).index();
+			$(this).parent().children().removeClass("CurrentNum")
+			$(this).addClass("CurrentNum");
+			var Pic=$(this).parent().parent().children("ul");
+			$(Pic).children().hide();
+			$(Pic).children("li").eq(CurrentIndex).show();
+		}	
+
+		function PicNumClick() {
+			$("div.LunBo div.LunBoNum span").eq(ToDisplayPicNumber).trigger("click");
+			ToDisplayPicNumber=(ToDisplayPicNumber+1)%PicTotal;
+			setTimeout("PicNumClick()",2000);
+		}
+
+		$(function(){
+			$("div.LunBo div.LunBoNum span").click(DisplayPic);
+			setTimeout("PicNumClick()",2000);
+
+		});
+		
+</script>
+</head>
+<body>
+	<!-- header begin -->
+	<div id="container">
+		<div class="header">
+
+		</div>
+	</div>
+	<!-- header end -->
+
+	<!-- nav begin -->
+
+	<div class="nav">
+        <div class="nav-in w">
+            <ul>
+                <li class="lia"><a href="index.html">首 页</a></li>
+                <li><a href="index_1.html">国家名录</a></li>
+                <li><a href="#">指尖艺术</a></li>
+                <li><a href="#">指尖艺术</a></li>
+                <li><a href="#">指尖艺术</a></li>
+                <li><a href="#">指尖艺术</a></li>
+            </ul>
+            <div class="search">
+            <input type="text" placeholder="请输入内容..."/>
+            <button></button>
+        </div>
+        </div>
+    </div>
+	<!-- nav end -->
+
+
+
+	<!--middle begin-->
+    <div class="img imgAnimation">
+        <img class="img" src="images/425.png" />
+    </div>  
+	<div class="LunBo">
+		<ul>
+			<li class="CurrentPic"><img src="images/1.jpg" width="302" height="227" align="center"></li>
+			<li><img src="images/2.jpg" width="302" height="227" align="center"></li>
+			<li><img src="images/3.jpg" width="302" height="227" align="center"></li>
+			<li><img src="images/4.jpg" width="302" height="227" align="center"></li>
+		</ul>
+			<div class="LunBoNum">
+				<span class="CurrentNum">Ο</span>
+				<span>Ο</span>
+				<span>Ο</span>
+				<span>Ο</span>
+			</div>
+	</div>
+
+		<br>
+		<br>
+		<hr class="h1">
+
+	<div class="main w">
+
+	 <div class="news">
+            <div class="news-top">
+                <h4>新闻中心</h4>
+                <a href="#" class="more">更多</a>
+            </div>
+            <ul>
+                <li><a href="#" class="red">最新公告</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+            </ul>
+        </div>
+
+
+        <div class="net">
+            <div class="news-top">
+                <h4>专题报道</h4>
+                <a href="#" class="more">更多</a>
+            </div>
+            <ul>
+                <li><a href="#" class="red">最新公告</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+            </ul>
+
+        </div>
+        <div class="r1">
+        	<img src="images/aacc.jpg" width="199" height="127">
+        	<img src="images/zyzl.jpg" class="img2">
+            <img src="images/a1.jpg" width="199" height="127" class="img3">
+            <img src="images/a2.jpg" width="116" height="103" class="img4">
+        </div>
+
+        <div class="net1">
+            <div class="news-top">
+                <h4>公告栏</h4>
+            </div>
+            <ul>
+                <li><a href="#" class="red">最新公告</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+            </ul>
+
+        </div>
+
+         <div class="net2">
+            <div class="news-top">
+                <h4>艺术论坛</h4>
+                <a href="#" class="more">更多</a>
+            </div>
+            <ul>
+                <li><a href="#" class="red">最新公告</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+      
+           </ul>
+            <ul class="ul1">
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+      
+           </ul>
+
+
+        </div>
+
+        <div class="net3">
+            <div class="news-top">
+                <h4>知识窗</h4>
+                <a href="#" class="more">更多</a>
+            </div>
+            <ul>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+            </ul>
+
+        </div>
+         <div class="net4">
+            <div class="news-top">
+                <h4>人物</h4>
+                <a href="#" class="more">更多</a>
+            </div>
+            <ul>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#" class="a3"> </a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+                <li><a href="#">指尖上的艺术</a></li>
+
+            </ul>
+
+        </div>
+        <hr class="h2">
+         <div class="net5">
+            <div class="news-top">
+                <h4>国家名录/类别</h4>
+            </div>
+        </div>
+
+         <div class="grid-c-ad">
+            <div class="f1">
+                <a href="#"><img src="images/t1.jpg" alt=""/></a>
+            </div>
+            <div class="f2">
+                <a href="#"><img src="images/t2.jpg" alt=""/></a>
+            </div>
+            <div class="f3">
+                <a href="#"><img src="images/t3.jpg" alt=""/></a>
+            </div>
+            <div class="f4">
+                <a href="#"><img src="images/t4.jpg" alt=""/></a>
+            </div>
+            <div class="f5">
+                <a href="#"><img src="images/t5.jpg" alt=""/></a>
+            </div>
+        </div>
+        </div>
+        <div class="ft">
+        <div class="font1">
+            <a href="#">【民间文学】</a>
+        </div>
+        <div class="font2">
+            <a href="#">【传统美术】</a>
+        </div>
+        <div class="font3">
+            <a href="#">【传统技艺】</a>
+        </div>
+        <div class="font4">
+            <a href="#">【传统医药】</a>
+        </div>
+        <div class="font5">
+            <a href="#">【民俗】</a>
+        </div>
+        </div>        
+    </div>
+	<!--middle end-->
+
+    <!--foot begin-->
+            <div id="footer">
+                <div class="difangshuxing" style="margin-left: 25px;">
+                    <div class="difangshuxing_lable">友情链接：</div>
+                    <div class="difangshuxing_value">
+                        <select onchange="goToWeb(this.value)">
+                            <option value="">相关网站</option>
+                            <option value="http://www.gov.cn/">中国人民政府网</option>
+                            <option value="http://www.mcprc.gov.cn/">中华人民共和国文化和旅游部</option>
+                            <option value="http://www.unesco.org/">联合国教育、科学与文化组织</option>
+                            <option value="http://www.sach.gov.cn/">国家文物局</option>
+                            <option value="http://www.dpm.org.cn/">故宫博物院</option>
+                            <option value="http://www.nlc.gov.cn/">国家图书馆</option>
+                            <option value="http://www.chinaculture.org/">中国文化网</option>
+                            <option value="http://www.zgysyjy.org.cn">中国艺术研究院</option>
+                            <option value="http://cich.sysu.edu.cn/">中国非物质文化遗产保护与研究网</option>
+                            <option value="http://www.chinafolklore.org/">中国民俗学网</option>
+                            <option value="http://www.craftsofchina.cn/">工艺美术门户网</option>
+                            <option value="http://www.crihap.cn/">联合国教科文组织亚太地区非物质文化遗产国际培训中心</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="difangfeiyiwangzhan">
+                    <div class="difangfeiyiwangzhan_value">
+                        <select onchange="goToWeb(this.value)">
+                            <option value="">省级非物质文化遗产网</option>
+                            <option value="http://www.ichshanghai.cn/">上海非物质文化遗产网</option>
+                            <option value="http://www.ichtianjin.com/">天津市非物质文化遗产网</option>
+                            <option value="http://www.cqwhysyj.cn/">重庆非物质文化遗产网</option>
+                            <option value="http://www.hebfwzwhyc.cn/">河北非物质文化遗产保护网</option>
+                            <option value="http://www.nmgfeiyi.cn/">内蒙古非物质文化遗产保护中心</option>
+                            <option value="http://www.lnwh.gov.cn/fybh.html">辽宁省非物质文化遗产保护</option>
+                            <option value="http://www.jsfybh.com/">江苏非物质文化遗产</option>
+                            <option value="http://www.zjfeiyi.cn/">浙江省非物质文化遗产网</option>
+                            <option value="http://www.hljfwz.cn/">黑龙江省非物质文化遗产保护中心</option>
+                            <option value="http://www.anhuify.net/">安徽省非物质文化遗产保护中心</option>
+                            <option value="http://www.fjfyw.net/">福建非遗网</option>
+                            <option value="http://www.sdfeiyi.org/">山东省非物质文化遗产保护中心</option>
+                            <!-- <option value="http://www.henanfy.org.cn/">河南非物质文化遗产</option> -->
+
+                            <option value="http://www.hns-whg.cn/topic/fyzx/index.html">湖南非物质文化遗产网</option>
+                            <option value="http://www.hnsfy.org/">海南省非物质文化遗产网</option>
+                            <option value="http://www.gzfwz.org.cn">贵州非物质文化遗产网</option>
+                            <option value="http://www.ynich.cn/">云南非物质文化遗产网</option>
+                            <option value="http://www.chinatibetnews.com/fy/">西藏非物质文化遗产</option>
+                            <option value="http://www.scview.cn">记忆四川</option>
+                            <option value="http://www.jlsfwzwhycbhzx.com/index.asp">吉林省非物质文化遗产网</option>
+                            <option value="http://hbfyw.xxhjs.com">湖北非物质文化遗产网</option>
+                            <option value="http://www.gdsqyg.com/home">广东省文化馆</option>
+                            <option value="http://www.jxfwzwhycw.com">江西省非物质文化遗产研究保护中心</option>
+                            <option value="http://www.wenhuagansu.com/html/fywh">文化甘肃</option>
+                            <option value="http://www.gxfybhw.cn">广西非物质文化遗产网</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="footer_txt">
+                    中国非物质文化遗产网版权所有 Copyright2006© <a onclick="windowOPENURL(&#39;http://www.miibeian.gov.cn/&#39;)" style="margin-left:133px;">备案序号:京ICP备07504941号-3</a><br>
+                    <a onclick="windowOPENURL(&#39;html/map.html&#39;)">网站地图</a>
+                    | <a onclick="window.external.AddFavorite(document.location.href,document.title)">收藏本站</a>
+                    | <a onclick="windowOPENURL(&#39;58/58_1.html&#39;)">联系我们</a>
+                    | <a onclick="windowOPENURL(&#39;59/59_1.html&#39;)">关于我们</a>
+                    | <a onclick="windowOPENURL(&#39;60/60_1.html&#39;)">版权与免责声明</a>
+                        <span style="margin-left:43px;">建议使用谷歌、火狐、360极速、IE10及以上版本浏览器</span>
+                </div>
+            </div>
+        </div>
+<!--foot end-->
+
+	
+</body>
+</html>
