@@ -43,9 +43,9 @@
         border-top: 1px solid #E1E1E1;
         }
         .nav-in {
+	    position:relative;
             height: 35px;
-           
-		margin:0 auto;
+            margin-left:55px;
         }
         .nav-in li {
             width: 79px;
